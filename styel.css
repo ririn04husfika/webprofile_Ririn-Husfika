@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: rgb(106, 106, 106);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+h1,h2,h3,h4,h5,h6 strong 
+{
+    color: white;
+}
+p
+{
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+p, 
+span, 
+label, 
+input, 
+textarea, 
+li 
+{
+    color: white (0, 0, 0);
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+@media screen and (max-widht: 1200px)
+{
+    .main-container {
+        width: 600%;
+    }
+}
+/*title huruf*/
+
+.section-title
+{
+   margin: 0 1rem;
+   font-size: 2rem; 
+}
+
+.pre-title
+{
+    font-family:fantasy;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: white(88, 97, 76);
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.pre-title::before
+{
+    content: "";
+    width: 33px;
+    height: 5%;
+    background-color: white(0, 0, 0);
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 78%;
+}
+/*layout*/
+.grid-3
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+/*logo*/
+
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+/*logo icon*/
+.nav ul
+{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+/*logo portofolio*/
+.logo 
+{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a{
+    color:rgb(244, 244, 221);
+}
+
+nav ul li
+{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a
+{
+    color: rgb(223, 223, 218);
+    font-size: 1.2rem;
+}
+nav ul li a:hover
+{
+    background-color: rgb(180, 170, 157);
+    color: rgb(24, 22, 19);
+}
+
+/*class burger*/
+
+.burger div
+{
+    width: 25px;
+    height: 2px;
+    background-color: rgb(96, 43, 43);
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.burger
+{
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 30px;
+    right: 35px;
+}
+
+
+/*hero section*/
+
+#hero
+{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-name
+{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+}
+
+.hero-name span
+{
+    color:rgb(202, 221, 26)
+}
+
+.hero-right
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*about*/
+
+#about
+{
+    background-color: rgb(106, 106, 106);
+    padding: 5rem 0;
+    height: 720px;
+    display: grid;
+    align-items: center;
+    padding: 3rem;
+    text-align: center;
+}
+
+.about-left
+{
+    font-size: 4rem;
+    text-align: center;
+    font-style: oblique;
+}
+
+.about-diri
+{
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+/* services secation*/
+
+#services
+{
+    background-color: rgb(106, 106, 106);
+    padding: 5rem 0;
+
+}
+
+.services .pre-title
+{
+    margin: auto;
+    letter-spacing: 20px;
+}
+
+.section-title
+{
+    text-align: center;
+}
+
+.services
+{
+    padding: 3rem;
+    text-align: center;
+    letter-spacing: 0px;
+    background: rgb(197, 197, 192);
+    border-radius: 332rem 233rem ;
+}
+
+.serveces h4
+{
+    margin: 3.5rem;
+    font-weight: 700;
+    font-size: 2,5rem;
+}
+
+.services-icon
+{
+    background-color: rgb(204, 164, 115);
+    margin: 0 auto;
+    width: 50px;
+    padding: 0.60rem 0.5rem;
+    border-radius: 1.5rem;
+}
+
+.services-icon svg 
+{
+    fill: rgb(239, 239, 239);
+}
+
+/*skill dan education*/
+#skill
+{
+    background-color: rgb(106, 106, 106);
+    padding: 2rem 0;
+}
+
+.skill-grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 5rem;
+    font-size: 1.2rem;
+    padding: 4rem 0  ;
+
+}
+
+.skill-right p
+{
+    position: relative;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 4rem;
+}
+
+.main-container .pre-title
+{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.main-container .skill
+{
+    font-size: 3rem;
+    text-align: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 19rem;
+}
+
+.skill
+{
+    padding: 1.5rem 55;
+}
+.education
+{
+    display: flex;
+    padding-left: 4rem;
+    gap: 2.5rem;
+    line-height: 2rem;
+    
+
+}
+
+.education .line
+{
+    padding: rem;
+    line-height: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 3.1;
+
+    
+}
+
+.education .line div
+{
+    width: 3px;
+    height: 100%;
+    background-color: rgb(45, 43, 43) ;
+    position: relative;
+}
+
+.education-info .education-title
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.education-info p
+{
+    margin: 1 rem 2rem;
+    color: white;
+    font-size: 20px;
+    line-height: 4rem;
+
+}
+.education-year
+{
+    margin-bottom: 3rem;
+    font-size: 20px;
+}
+
+
+/*one the line*/
+
+.education .line div:before
+{
+    content: "";
+    width: 15px;
+    height: 19px;
+    background: rgb(86, 85, 85);
+    border-radius: 53%;
+    position: absolute;
+    left: -6px;
+    bottom: 151px;
+    
+}
+
+.skill-list
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 1.4rem;
+    font-size: medium;
+    padding: 0 4rem;
+}
+
+.skill-right ul 
+{
+    line-height: 3rem;
+    padding: 0 1rem;
+}
+
+/* contact*/
+
+#contact
+{
+    padding:5 0rem ;
+    background-color: rgb(106, 106, 106);
+}
+
+.contact
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 5rem;
+    font-size: 1.2rem;
+    padding: 6.5rem;
+}
+
+.contact-form div
+{
+    margin-bottom: 1.4rem;
+}
+
+.contact-form input, .contact-form textarea
+{
+    width: 100%;
+    padding: .75rem 1.3rem;
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 18;
+    background-color: rgb(175, 175, 160);
+    border: 1px solid rgb(102, 99, 99);
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder
+{
+    color: rgb(92, 98, 104);
+}
+
+.contact-form input:focus, .contact-form textarea:focus
+{
+    outline: none;
+    border: 1px solid white;
+}
+
+.btn-submit
+{
+    width: 100%;
+    padding: .75rem 1.3rem;
+    background-color: rgb(175, 175, 160);
+    color: white;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn-submit:hover 
+{
+    background: rgb(164, 164, 160);
+}
+
+.contact-item
+{
+    display: center;
+}
+
+.contact-item-icon
+{
+    background-color: rgb(164, 164, 160);
+    width: 53px;
+    height: 53px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-item-icon svg
+{
+    fill: rgb(235, 229, 229);
+}
+
+.contact-item-icon h4
+{
+    margin-bottom: rem;
+}
+
+footer{
+    padding: 1rem 0;
+    background: rgb(162, 162, 159);
+    text-align: center;
+}
+
+.footer-icon
+{
+    margin-bottom: 1rem;
+}
+
+.footer-icon a{
+    margin: 0 .5rem;
+}
+
+.footer-icon svg
+{
+    fill: rgb(105, 101, 100);
+}
+
+.footer-icon a:hover svg
+{
+    fill:black;
+}
